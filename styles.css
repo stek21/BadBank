@@ -1,5 +1,4 @@
 
-
 :root {
       --primary-white: #fff;
       --primary-blue: #69e6ff;
@@ -27,6 +26,18 @@ nav ul li {
     
 }
 
+.navbar-brand {
+    border-bottom: 0.1875rem solid var(--primary-dark);
+}
+
+.navbar-brand.active,  .navbar-brand:focus {
+    border-bottom: 0.1875rem solid var(--primary-blue);
+}
+
+.navbar-brand:hover {
+    border-bottom: 0.1875rem solid var(--primary-blue);
+}
+
 .navbar-nav > li > a {
     margin-right: 0.75rem;
     margin-left: 0.75rem;
@@ -34,11 +45,12 @@ nav ul li {
     border-bottom: 0.1875rem solid var(--primary-dark);
 }
 
-.navbar-nav > li >a.active, .navbar-nav > li > a:focus {
+.navbar-nav > li > a.active, .navbar-nav > li > a:focus {
     border-bottom: 0.1875rem solid var(--primary-blue);
 }
 
 .navbar-nav > li > a:hover {
     border-bottom: 0.1875rem solid var(--primary-blue);
 }
+
 
