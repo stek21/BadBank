@@ -21,9 +21,6 @@ function NavBar(){
             <a className="nav-link" data-bs-toggle="tooltip" title="Withdraw Page" href="#/withdraw/">Withdraw</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" data-bs-toggle="tooltip" title="Balance Page" href="#/balance/">Balance</a>
-          </li>
-          <li className="nav-item">
             <a className="nav-link" data-bs-toggle="tooltip" title="All Data Page" href="#/alldata/">AllData</a>
           </li>          
         </ul>
