@@ -1,27 +1,21 @@
-
-
-/*function AllData(){
-  const ctx = React.useContext(UserContext);
-  return (
-    <>
-    <h5>All Data in Store</h5>
-    {JSON.stringify(ctx)}<br/>
-    </>
-  );
-}*/
-
 function AllData(){
   const ctx = React.useContext(UserContext);
   return (
     <>
-        <Card
-      bgcolor="secondary"
-      txtcolor="light"
-      header="All Data"
-      header-bg="success"
-      body={JSON.stringify(ctx)}
-    />    
-    <br/>
+    {ctx.users.map((ctx, i) =>
+      <Card
+        key={i}
+        bgcolor="secondary"
+        txtcolor="light"
+        header={"User Data for: " + ctx.name}
+        title={"Balance: $" + ctx.balance}
+        text={"Email: " + ctx.email}
+        header-bg="success"
+        body={"Password: " + ctx.password}
+      />    
+    )}
+      
+    
     </>
   );
 }
