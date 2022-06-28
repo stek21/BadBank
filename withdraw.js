@@ -7,7 +7,7 @@ function Withdraw(){
 
   const ctx = React.useContext(UserContext);  
 
-  const validate = (amount) => {
+  const validate = amount => {
       if (!amount) {
         setStatus('Error: please enter a value');
         return false;
@@ -24,7 +24,7 @@ function Withdraw(){
       return true;
   }
 
-  const makeWithdrawal = (amount) => {
+  const makeWithdrawal = amount => {
     if (!validate(amount)) return;
     setBalance(Number(balance) - Number(amount));
     setShow(false);
