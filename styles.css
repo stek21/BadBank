@@ -1,0 +1,44 @@
+
+
+:root {
+      --primary-white: #fff;
+      --primary-blue: #69e6ff;
+      --primary-dark: rgba(255, 255, 255, 0);  
+}
+
+body {
+    background-image: url(bg-image.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+nav a.nav-link {
+    font-size: .8rem;
+    letter-spacing: 0.0375rem;
+    cursor: pointer;
+}
+
+nav ul li {
+    text-transform: uppercase; 
+    
+}
+
+.navbar-nav > li > a {
+    margin-right: 0.75rem;
+    margin-left: 0.75rem;
+    color: var(--primary-white) !important;
+    border-bottom: 0.1875rem solid var(--primary-dark);
+}
+
+.navbar-nav > li >a.active, .navbar-nav > li > a:focus {
+    border-bottom: 0.1875rem solid var(--primary-blue);
+}
+
+.navbar-nav > li > a:hover {
+    border-bottom: 0.1875rem solid var(--primary-blue);
+}
+
